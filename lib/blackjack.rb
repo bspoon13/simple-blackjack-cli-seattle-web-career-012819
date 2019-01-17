@@ -3,7 +3,7 @@ def welcome
 end
 
 def deal_card
-  rand(12)
+  rand(1..10)
 end
 
 def display_card_total
@@ -41,4 +41,3 @@ end
 def runner
   # code runner here
 end
-    

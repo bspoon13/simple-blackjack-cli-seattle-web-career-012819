@@ -37,6 +37,7 @@ def hit?(card_total)
     when "h"
       card_total += deal_card
     when "s"
+      "you have chosen to stay"
     else
       invalid_command
   end
@@ -55,5 +56,11 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  hit?
+  until card_total > 21
+    hit?
+  end
+  end_game
 end

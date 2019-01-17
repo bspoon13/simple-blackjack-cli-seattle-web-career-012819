@@ -26,7 +26,7 @@ def initial_round
   card1 = deal_card
   card2 = deal_card
   card_total = card_1 + card_2
-  display_card_total(card_total)  
+  display_card_total(card_total)
 end
 
 def hit?(card_total)
@@ -38,9 +38,9 @@ def hit?(card_total)
     when "s"
     else
       invalid_command
-    
-    
-    
+
+
+
 
 def invalid_command
   puts "Please enter a valid command"

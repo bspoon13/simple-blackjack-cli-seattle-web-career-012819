@@ -26,6 +26,8 @@ def initial_round
   card1 = deal_card
   card2 = deal_card
   card_total = card1 + card2
+  puts "Your cards add up to #{card_total}"
+  return card_total
 end
 
 def hit?(card_total)

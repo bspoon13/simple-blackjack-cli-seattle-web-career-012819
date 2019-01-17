@@ -37,10 +37,10 @@ def hit?(card_total)
     when "h"
       card_total += deal_card
     when "s"
-      return playerChoice
     else
       invalid_command
   end
+  return card_total
 
 end
 

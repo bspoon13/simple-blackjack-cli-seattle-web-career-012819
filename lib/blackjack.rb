@@ -36,6 +36,7 @@ def hit?(card_total)
   case playerChoice
     when "h"
       card_total += deal_card
+      display_card_total(card_total)
     when "s"
     else
       invalid_command

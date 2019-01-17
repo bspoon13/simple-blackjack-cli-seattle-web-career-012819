@@ -40,6 +40,7 @@ def hit?(card_total)
     else
       invalid_command
   end
+  display_card_total(card_total)
   return card_total
 end
 
@@ -59,7 +60,6 @@ def runner
   card_total = hit?(initial_round)
   until card_total > 21
     hit?(card_total)
-    display_card_total(card_total)
   end
   end_game(card_total)
 end

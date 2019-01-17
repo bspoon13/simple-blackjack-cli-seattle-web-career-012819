@@ -37,10 +37,11 @@ def hit?(card_total)
     when "h"
       card_total += deal_card
     when "s"
+      return playerChoice
     else
       invalid_command
   end
-  return card_total
+
 end
 
 
@@ -56,9 +57,8 @@ end
 
 def runner
   welcome
-  initial_round
   card_total = hit?(initial_round)
-  until card_total > 21
+  until card_total > 21 || "s"
     hit?(card_total)
     display_card_total(card_total)
   end

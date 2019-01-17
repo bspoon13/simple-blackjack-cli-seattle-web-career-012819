@@ -39,8 +39,9 @@ def hit?(card_total)
     when "s"
     else
       invalid_command
+    return card_total
   end
-  card_total
+  return card_total
 end
 
 

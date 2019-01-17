@@ -38,8 +38,7 @@ def hit?(card_total)
       card_total += deal_card
     when "s"
     else
-      invalid_command
-    return card_total
+      puts "invalid_command"
   end
   return card_total
 end

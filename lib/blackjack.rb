@@ -37,7 +37,6 @@ def hit?(card_total)
     when "h"
       card_total += deal_card
     when "s"
-      "you have chosen to stay"
     else
       invalid_command
   end
